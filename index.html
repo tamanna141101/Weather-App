@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Weather</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+  <div class="container">
+
+
+
+    <div class="d-flex justify-content-between">
+      <div>
+        <div class="weather-status text-white text-center">
+          <img id="image" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+          <h1 id="location">Weather</h1>
+          <h3><span id="temperature">0</span>&deg;C</h3>
+          <h1 id="weather" class="lead"></h1>
+        </div>
+      </div>
+
+      <form class="col-md-6 m-auto py-5">
+        <div class="input-group mb-3">
+          <input id="input-location" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+          <div class="input-group-append">
+            <button id="search-btn" type="button" class="btn btn-danger">Search</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="mt-5">
+        <div class="weather-status text-white text-end">
+          <div>
+            <h6>Humidity</h6>
+            <h2 id="humidity"></h2>
+          </div>
+          <div>
+            <h6>Air Pressure</h6>
+            <h2 id="pressure"></h2>
+          </div>
+          <div>
+            <h6>Wind speed</h6>
+            <h2 id="wind"></h2>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div #swiperRef="" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="script.js"></script>
+</body>
+
+</html>
